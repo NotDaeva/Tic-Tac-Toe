@@ -1,0 +1,58 @@
+:root {
+    --color-black-000: rgb(0,0,0);
+    --color-black-200: rgb(50,50,50);
+    --color-black-300: rgb(75,75,75);
+    --color-white-000: rgb(255,255,255);
+    --color-white-100: rgb(245,245,245);
+    --color-white-200: rgb(240,240,240);
+    --color-pink-200: rgb(255, 178, 178);
+    --color-pink-300: rgb(255, 123, 123);
+    --color-pink-700: rgb(250, 100, 100);
+    --default-border: 0.25rem solid var(--color-black-200);
+}
+
+body {
+    margin: 0;
+    color: var(--color-black-200);
+    background-color: var(--color-white-200);
+    font-family: "Source Code Pro";
+    text-align: center;
+}
+
+header {
+    padding: 2rem;
+    color: var(--color-white-000);
+    background-color: var(--color-pink-700);
+    text-align: center;
+}
+
+.btn {
+    padding: 0.25rem 1.5rem;
+    border-radius: 0.5rem;
+    border: var(--default-border);
+    color: var(--color-white-000);
+    background-color: var(--color-pink-700);
+    font: inherit;
+    font-weight: bold;
+}
+
+#btn-cancel {
+    border-color: var(--color-pink-700);
+    color: var(--color-pink-700);
+    background-color: transparent;
+}
+
+.btn-edit {
+    color: var(--color-pink-300);
+    border: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0.25rem rgba(50,50,50,0.5);
+}
+
+.btn-edit:hover {
+    color: var(--color-pink-700);
+    font-weight: 600;
+}

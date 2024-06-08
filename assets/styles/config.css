@@ -1,0 +1,89 @@
+:root {
+  --color-black-000: rgb(0, 0, 0);
+  --color-black-200: rgb(50, 50, 50);
+  --color-black-300: rgb(75, 75, 75);
+  --color-white-000: rgb(255, 255, 255);
+  --color-white-100: rgb(245, 245, 245);
+  --color-white-200: rgb(240, 240, 240);
+  --color-pink-200: rgb(255, 178, 178);
+  --color-pink-300: rgb(255, 123, 123);
+  --color-pink-700: rgb(250, 100, 100);
+  --default-border: 0.25rem solid var(--color-black-200);
+}
+
+#config-overlay {
+  border: var(--default-border);
+  border-radius: 0.5rem;
+  background-color: var(--color-white-000);
+  text-align: center;
+}
+
+#config-overlay h2 {
+  margin: 0.5rem 0;
+}
+
+#form-config {
+  margin: 0.5rem 0;
+}
+
+#form-config label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-black-300);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+#form-config input {
+  width: 15rem;
+  padding: 0.25rem;
+  border: var(--default-border);
+  border-radius: 0.5rem;
+  color: var(--color-white-000);
+  background-color: var(--color-black-200);
+  font: inherit;
+  text-align: center;
+}
+
+#player-display {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+#player-display ol {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#player-display li {
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  border: var(--default-border);
+  border-radius: 0.5rem;
+  background-color: var(--color-white-000);
+  box-shadow: 0 0 0.5rem rgba(50, 50, 50, 0.25);
+}
+
+#player-display h2{
+    margin: 0.5rem 0 0 0;
+    font-size: 0.75rem;
+}
+
+#player-display h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-pink-300);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.player-symbol {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-black-200);
+}

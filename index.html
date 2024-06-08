@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/config.css" />
+    <link rel="stylesheet" href="assets/styles/game.css" />
+    <link rel="stylesheet" href="assets/styles/overlay.css" />
     <script src="assets/scripts/config.js" defer></script>
     <script src="assets/scripts/game.js" defer></script>
     <script src="assets/scripts/app.js" defer></script>
@@ -29,7 +33,7 @@
             <input type="text" name="user-name" id="user-name" />
           </div>
           <div>
-            <button type="reset" class="btn btn-cancel" id="btn-cancel">
+            <button type="reset" class="btn" id="btn-cancel">
               CANCEL
             </button>
             <button type="submit" class="btn" id="btn-confirm">CONFIRM</button>
@@ -49,7 +53,7 @@
                 id="btn-edit-01"
                 data-player-id="1"
               >
-                Edit
+                EDIT
               </button>
             </article>
           </li>
@@ -63,7 +67,7 @@
               id="btn-edit-02"
               data-player-id="2"
             >
-              Edit
+              EDIT
             </button>
           </li>
         </ol>
@@ -71,22 +75,22 @@
       </section>
       <section id="game">
         <article id="game-over">
-            <h3>You won, <span id="winner-name">PLAYER NAME</span></h3>
-            <p>Click "Start New Game" above, to start a new game!</p>
+          <h3>You won, <span id="winner-name">PLAYER NAME</span></h3>
+          <p>Click "Start New Game" above, to start a new game!</p>
         </article>
         <p>It's your turn <span id="current-player">PLAYER NAME</span></p>
         <ol id="game-board">
-            <li></li>
-            <li></li>
-            <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
 
-            <li></li>
-            <li></li>
-            <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
 
-            <li></li>
-            <li></li>
-            <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </section>
     </main>
