@@ -1,0 +1,39 @@
+:root {
+  --color-black-000: rgb(0, 0, 0);
+  --color-black-200: rgb(50, 50, 50);
+  --color-black-300: rgb(75, 75, 75);
+  --color-white-000: rgb(255, 255, 255);
+  --color-white-100: rgb(245, 245, 245);
+  --color-white-200: rgb(240, 240, 240);
+  --color-pink-200: rgb(255, 178, 178);
+  --color-pink-300: rgb(255, 123, 123);
+  --color-pink-700: rgb(250, 100, 100);
+  --default-border: 0.25rem solid var(--color-black-200);
+}
+
+#config-overlay {
+  width: 90%;
+  /* display: none; */
+  padding: 1rem;
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  box-shadow: 0 0 0.5rem rgba(50, 50, 50, 0.25);
+}
+
+#backdrop {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(50, 50, 50, 0.75);
+}
+
+@media (min-width: 40rem) {
+  #config-overlay {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
